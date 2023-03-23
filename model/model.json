@@ -1,0 +1,45 @@
+{
+  "root": {
+    "attribute": "Glucose",
+    "predicateName": ">=",
+    "pivot": 128,
+    "match": {
+      "attribute": "bmi",
+      "predicateName": ">=",
+      "pivot": 29.9,
+      "match": {
+        "attribute": "Glucose",
+        "predicateName": ">=",
+        "pivot": 158,
+        "match": {
+          "attribute": "bmi",
+          "predicateName": ">=",
+          "pivot": 30.9,
+          "match": {
+            "category": "1"
+          },
+          "notMatch": {
+            "category": "1"
+          },
+          "matchedCount": 68,
+          "notMatchedCount": 11
+        },
+        "notMatch": {
+          "category": "1"
+        },
+        "matchedCount": 79,
+        "notMatchedCount": 95
+      },
+      "notMatch": {
+        "category": "0"
+      },
+      "matchedCount": 174,
+      "notMatchedCount": 54
+    },
+    "notMatch": {
+      "category": "0"
+    },
+    "matchedCount": 228,
+    "notMatchedCount": 386
+  }
+}
